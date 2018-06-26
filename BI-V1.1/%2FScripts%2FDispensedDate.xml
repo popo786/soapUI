@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/Scripts/DispensedDate" path="/Scripts/DispensedDate" id="7e4e6b98-fad8-4a51-ac10-61231a04b19f" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="7e4e6b98-fad8-4a51-ac10-61231a04b19ffileName">%2FScripts%2FDispensedDate</con:setting></con:settings><con:parameters/><con:method name="DispensedDate" id="2c50feb8-15e0-41f8-a950-4d0e610555a7" method="GET"><con:description>Get the Dispense scripts details with optional parameters like isHospitalorFacilityPatient and mandatory date range based on Dispense Date. This operation can be used to get initial load of scripts like a bootstrap data.
+</con:description><con:settings/><con:parameters><con:parameter required="true"><con:name>fromDate</con:name><con:style>QUERY</con:style><con:description/></con:parameter><con:parameter required="true"><con:name>toDate</con:name><con:style>QUERY</con:style><con:description/></con:parameter><con:parameter required="true"><con:name>FredAccessKey</con:name><con:style>HEADER</con:style><con:description>Access key related to the store</con:description></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent>{StoreNumber=AB1001, ApprovalNumber=Z898MMS, Id=5647336992, ScriptId=102529, ScriptNumber=100871, ModifiedDateTime=2018-01-17T04:08:15+00:00, OperatorId=100004, OperatorInitials=Kav Phil, PatientId=5639092586, PatientCategory=C, MedicareNumber=c6078b426d803074c93e4b7c1a4657b4de39e7dab3404d91559941800263d523, IsMedicareNumberValid=true, RepatNumber=, ConcessionNumber=7950cde7b696ce8f837dd0fea3eb6b47348b333561e652d2e3c48a9ca8c8531b, PatientName=FirstName:2e9d6d5dec0bb87e9c8eab11e451bf8b961d2153ec318931093a41bedf9df467;LastName:42e87a336720c4aec54f29d87667d9e152f509bdacd167cacf09a7b835652f0f;FullName:f65d2aa6bd6a62dfc1827bc7eff32a974eb4b6d855f95ebd940ba17c85687ac7;, PatientSuburb=Heidelberg VIC, PatientPostcode=3084, PatientDateOfBirth=YYYY-01, PatientGender=Female, PrescriberId=5637351777, PrescriberName=FirstName:af2539934ff275d6ef73040cbc96ee5f37d79ca61a860d2d10ada7b14c3a9e74;LastName:808e7035dfdeaa89230e98470fb37e6d6f8833283f0073b614c46e3fc3fbbbe0;FullName:a47663564d35b8de4bd418e4e0efed99894986a8e2bac65634c74dd0903c019e;, PrescriberNumber=7d99395e10f2aba85b76c0ba63128bf9a6bca58433e0dce791a93971f411b9f2, PrescriberSuburb=Heidelberg, PrescriberPostcode=3084, PrescriberType=Medical Practitioner, ItemId=112170, DrugSchedule=4, PackSize=20.0, IsS8Report=false, DrugCode=CIL9, ManufacturerCode=QA, Description=amoxycillin CAPSULES 250mg (CILAMOX), AlternateDescription=CILAMOX CAPSULES 250mg, GenericIngredient=AMOXICILLIN=AMOXYCILLIN, ItemBarcode=9316626601226, PBSCode=1884E, NhsDispensedCode=1884E, ScriptClass=C, ScriptStatus=AwaitingSaleAtPOS, DirectionsFull=Take ONE capsule daily, Quantity=20.0, MaxDispenseQuantity=20.0, Repeats=5, RepeatNumber=1, RepeatsLeft=4, FastRepeatCode=V4881, Reg24Dispensing=false, ImmediateSupply=false, AuthorityNumber=123123, IsOwing=false, IsDeferred=false, IsPreviouslyDeferred=false, IsAuthorityScript=true, IsPBS=true, IsGenericSubstitutionUsed=true, DispenseClaimCategory=, PrescribedDate=2018-01-16, DispenseDate=2018-01-17T04:06:04+00:00, ScriptType=PBS, ScriptTypeHotKey=N, OriginalScriptNumber=2657978, OriginalPharmacyNumber=22950X, PatientPrice=5.3, GovernmentEstimatedRebate=6.19, CtgCoPaymentRelief=0.0, EScriptIncentive=0.15, PremiumFreeIncentive=1.78, Cost=1.38, CoPaymentDiscount=1.0, PrfSafetyNetContribution=5.3, PrivateTax=0.0, Classification=Normal}</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent><![CDATA[<DispenseScript>
+   <StoreNumber>string</StoreNumber>
+   <ApprovalNumber>string</ApprovalNumber>
+   <Id>0</Id>
+   <ScriptId>0</ScriptId>
+   <ScriptNumber>0</ScriptNumber>
+   <ModifiedDateTime>2015-07-20T15:49:04-07:00</ModifiedDateTime>
+   <OperatorId>string</OperatorId>
+   <OperatorInitials>string</OperatorInitials>
+   <PatientId>0</PatientId>
+   <PatientCategory>string</PatientCategory>
+   <MedicareNumber>string</MedicareNumber>
+   <IsMedicareNumberValid>string</IsMedicareNumberValid>
+   <RepatNumber>string</RepatNumber>
+   <ConcessionNumber>string</ConcessionNumber>
+   <PatientName>string</PatientName>
+   <PatientSuburb>string</PatientSuburb>
+   <PatientPostcode>string</PatientPostcode>
+   <PatientDateOfBirth>string</PatientDateOfBirth>
+   <PatientGender>string</PatientGender>
+   <PrescriberId>0</PrescriberId>
+   <PrescriberName>string</PrescriberName>
+   <PrescriberNumber>string</PrescriberNumber>
+   <PrescriberSuburb>string</PrescriberSuburb>
+   <PrescriberPostcode>string</PrescriberPostcode>
+   <PrescriberType>string</PrescriberType>
+   <ItemId>string</ItemId>
+   <DrugSchedule>string</DrugSchedule>
+   <PackSize>1.100000023841858</PackSize>
+   <IsS8Report>string</IsS8Report>
+   <DrugCode>string</DrugCode>
+   <ManufacturerCode>string</ManufacturerCode>
+   <Description>string</Description>
+   <AlternateDescription>string</AlternateDescription>
+   <GenericIngredient>string</GenericIngredient>
+   <ItemBarcode>string</ItemBarcode>
+   <PBSCode>string</PBSCode>
+   <NhsDispensedCode>string</NhsDispensedCode>
+   <ScriptClass>string</ScriptClass>
+   <ScriptStatus>string</ScriptStatus>
+   <DirectionsFull>string</DirectionsFull>
+   <Quantity>1.100000023841858</Quantity>
+   <MaxDispenseQuantity>1.100000023841858</MaxDispenseQuantity>
+   <Repeats>0</Repeats>
+   <RepeatNumber>0</RepeatNumber>
+   <RepeatsLeft>0</RepeatsLeft>
+   <FastRepeatCode>string</FastRepeatCode>
+   <Reg24Dispensing>string</Reg24Dispensing>
+   <ImmediateSupply>string</ImmediateSupply>
+   <AuthorityNumber>string</AuthorityNumber>
+   <IsOwing>string</IsOwing>
+   <IsDeferred>string</IsDeferred>
+   <IsPreviouslyDeferred>string</IsPreviouslyDeferred>
+   <IsAuthorityScript>string</IsAuthorityScript>
+   <IsPBS>string</IsPBS>
+   <IsGenericSubstitutionUsed>string</IsGenericSubstitutionUsed>
+   <DispenseClaimCategory>string</DispenseClaimCategory>
+   <PrescribedDate>2015-07-20T15:49:04-07:00</PrescribedDate>
+   <DispenseDate>2015-07-20T15:49:04-07:00</DispenseDate>
+   <ScriptType>string</ScriptType>
+   <ScriptTypeHotKey>string</ScriptTypeHotKey>
+   <OriginalScriptNumber>string</OriginalScriptNumber>
+   <OriginalPharmacyNumber>string</OriginalPharmacyNumber>
+   <PatientPrice>1.100000023841858</PatientPrice>
+   <GovernmentEstimatedRebate>1.100000023841858</GovernmentEstimatedRebate>
+   <CtgCoPaymentRelief>1.100000023841858</CtgCoPaymentRelief>
+   <EScriptIncentive>1.100000023841858</EScriptIncentive>
+   <PremiumFreeIncentive>1.100000023841858</PremiumFreeIncentive>
+   <Cost>1.100000023841858</Cost>
+   <CoPaymentDiscount>1.100000023841858</CoPaymentDiscount>
+   <PrfSafetyNetContribution>1.100000023841858</PrfSafetyNetContribution>
+   <PrivateTax>1.100000023841858</PrivateTax>
+   <Classification>string</Classification>
+</DispenseScript>]]></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent>"string"</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent>&lt;string>string&lt;/string></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent>{
+  "Error" : {
+    "MessageCode" : "Error",
+    "MessageType" : "Error",
+    "Message" : "string",
+    "ErrorDetails" : { }
+  },
+  "CorrelationId" : "00000000-0000-0000-0000-000000000000",
+  "ResponseDateTime" : "2015-07-20T15:49:04-07:00",
+  "ApiVersion" : "string"
+}</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent><![CDATA[<ApiErrorResponse>
+   <ApiError>
+      <MessageCode>Error</MessageCode>
+      <MessageType>Error</MessageType>
+      <Message>string</Message>
+      <ErrorDetails/>
+   </ApiError>
+   <CorrelationId>00000000-0000-0000-0000-000000000000</CorrelationId>
+   <ResponseDateTime>2015-07-20T15:49:04-07:00</ResponseDateTime>
+   <ApiVersion>string</ApiVersion>
+</ApiErrorResponse>]]></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:request name="Request 1" id="f00e7695-6bea-4a73-8b8f-d3e7a3e3db36" mediaType="application/json"><con:settings/><con:endpoint>https://nxt-tpi-qa-bi-v-api.azurewebsites.net</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:environmentSpec><con:entry environmentId="ed751753-4140-47e0-ac6a-bf3aa60cc87d"><con:authProfile>No Authorization</con:authProfile></con:entry></con:environmentSpec></con:request></con:method></con:resource>

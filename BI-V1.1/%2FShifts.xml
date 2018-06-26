@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/Shifts" path="/Shifts" id="ed64a695-8c2f-4b77-97a3-9efe5696db20" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="ed64a695-8c2f-4b77-97a3-9efe5696db20fileName">%2FShifts</con:setting></con:settings><con:parameters/><con:method name="POSShifts" id="f0c85f45-6465-40ed-9aea-387222aac988" method="GET"><con:description>Get all the POS Shifts/Batches for the given date range
+</con:description><con:settings/><con:parameters><con:parameter required="true"><con:name>fromDate</con:name><con:style>QUERY</con:style><con:description xsi:nil="true"/></con:parameter><con:parameter required="true"><con:name>toDate</con:name><con:style>QUERY</con:style><con:description xsi:nil="true"/></con:parameter><con:parameter required="true"><con:name>FredAccessKey</con:name><con:style>HEADER</con:style><con:description>Access key related to the store</con:description></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent>{StoreNumber=AB1001, ShiftId=123, TerminalNumber=100001, StartDate=2017-12-07T14:30:00+00:00, EndDate=2017-12-07T20:00:45+00:00}</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent><![CDATA[<Batch>
+   <StoreNumber>string</StoreNumber>
+   <ShiftId>0</ShiftId>
+   <TerminalNumber>string</TerminalNumber>
+   <StartDate>2015-07-20T15:49:04-07:00</StartDate>
+   <EndDate>2015-07-20T15:49:04-07:00</EndDate>
+</Batch>]]></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent>"string"</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent>&lt;string>string&lt;/string></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent>{
+  "Error" : {
+    "MessageCode" : "Error",
+    "MessageType" : "Error",
+    "Message" : "string",
+    "ErrorDetails" : { }
+  },
+  "CorrelationId" : "00000000-0000-0000-0000-000000000000",
+  "ResponseDateTime" : "2015-07-20T15:49:04-07:00",
+  "ApiVersion" : "string"
+}</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent><![CDATA[<ApiErrorResponse>
+   <ApiError>
+      <MessageCode>Error</MessageCode>
+      <MessageType>Error</MessageType>
+      <Message>string</Message>
+      <ErrorDetails/>
+   </ApiError>
+   <CorrelationId>00000000-0000-0000-0000-000000000000</CorrelationId>
+   <ResponseDateTime>2015-07-20T15:49:04-07:00</ResponseDateTime>
+   <ApiVersion>string</ApiVersion>
+</ApiErrorResponse>]]></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:request name="Request 1" id="3f463f03-9488-42df-8c71-ebc3174cffe8" mediaType="application/json"><con:settings/><con:endpoint>https://nxt-tpi-qa-bi-v-api.azurewebsites.net</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:environmentSpec><con:entry environmentId="ed751753-4140-47e0-ac6a-bf3aa60cc87d"><con:authProfile>No Authorization</con:authProfile></con:entry></con:environmentSpec></con:request></con:method></con:resource>

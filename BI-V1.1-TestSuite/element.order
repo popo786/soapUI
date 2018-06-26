@@ -1,0 +1,15 @@
+%2FBarcodes-TestCase.xml
+%2FShifts-TestCase.xml
+%2FCategoryHierarchy-TestCase.xml
+%2FCategoryHierarchy%2F%7BId%7D-TestCase.xml
+%2FCategoryHierarchy%2FName%2F%7Bname%7D-TestCase.xml
+%2FCategoryHierarchy%2FType%2F%7Btype%7D-TestCase.xml
+%2FScripts-TestCase.xml
+%2FScripts%2FDispensedDate-TestCase.xml
+%2FProducts-TestCase.xml
+%2FProducts%2F%7BproductId%7D-TestCase.xml
+%2FProducts%2FItem%2F%7BitemId%7D-TestCase.xml
+%2FProducts%2FBarcode%2F%7Bbarcode%7D-TestCase.xml
+%2FOrders-TestCase.xml
+%2FSales-TestCase.xml
+%2FStocks-TestCase.xml

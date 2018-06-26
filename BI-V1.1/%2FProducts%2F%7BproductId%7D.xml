@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/Products/{productId}" path="/Products/{productId}" id="013d5f3d-477e-4d04-ab89-3f86b09d5eb0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="013d5f3d-477e-4d04-ab89-3f86b09d5eb0fileName">%2FProducts%2F%7BproductId%7D</con:setting></con:settings><con:parameters><con:parameter required="true"><con:name>productId</con:name><con:style>TEMPLATE</con:style><con:dataType>integer</con:dataType><con:description/></con:parameter></con:parameters><con:method name="ProductsById" id="f5d05f5a-8a32-4ca8-b6ef-968302cf9936" method="GET"><con:description>Returns Product details for given ProductId with associated drug information if it is a drug, all barcodes and basic hierarchy details that product is associated with.
+</con:description><con:settings/><con:parameters><con:parameter required="true"><con:name>FredAccessKey</con:name><con:style>HEADER</con:style><con:description>Access key related to the store</con:description></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent>{StoreNumber=AB1001, ItemId=700002, Brand=VINORELBINE (HOSPIRA), ItemDescription=VINORELBINE (MX) INF 50MG 1, SupplierCode=SUP001, SupplierName=SUPPLIER OF SHOP, ProductId=56373569, Status=Active, Type=Item, ProductSubType=Product, PurchaseUnit=ea, RPHParent=5678916, RPHPath=Retail Hierarchy/Drugs/Appcat, UOM=ea, PackSize=1.0, ProductModifiedDateTime=2017-04-25T01:39:31+00:00, Drug={DrugId=56384801, AMTCode=, ManufacturerCode=PF, AlternateDescription=vinorelbine, PBSCode=4620E, 7263G, FredDrugCode=VINO11, DrugSchedule=4, AppCatItemId=APC-152917, ActiveIngredient=vinorelbine, GenericIngredient=vinorelbine 50 mg/5 mL injection, 5 mL vial, Format=INJECTION, FormatShortCode=INJ, Strength=50mg/5mL, DrugModifiedDateTime=2018-04-26T00:46:21+00:00}, CategoryLevels=[{Level=1, Id=45678901, Name=Managed hierarchy}, {Level=1, Id=45678910, Name=Retail Hierarchy, NextLevel=[{Level=2, Id=45678912, Name=Drugs, NextLevel=[{Level=3, Id=45678914, Name=Appcat}]}]}], SOHQty=3.0, SOHModifiedDateTime=2018-04-09T22:17:01+00:00, Barcodes=[{Active=false, ModifiedDateTime=2017-05-01T21:50:56+00:00, ItemId=700002, Barcode=9313109721013, BarcodeSetupId=EAN128}, {Active=false, ModifiedDateTime=2017-05-01T07:53:27+00:00, ItemId=700002, Barcode=9314540000000, BarcodeSetupId=EAN128}], Length=0.0, Height=0.0, Width=0.0, Weight=0.0, PlanogramCode=}</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent><![CDATA[<Product>
+   <StoreNumber>string</StoreNumber>
+   <ItemId>string</ItemId>
+   <Brand>string</Brand>
+   <ItemDescription>string</ItemDescription>
+   <SupplierCode>string</SupplierCode>
+   <SupplierName>string</SupplierName>
+   <ProductId>0</ProductId>
+   <Status>string</Status>
+   <Type>string</Type>
+   <ProductSubType>string</ProductSubType>
+   <PurchaseUnit>string</PurchaseUnit>
+   <RPHParent>0</RPHParent>
+   <RPHPath>string</RPHPath>
+   <UOM>string</UOM>
+   <PackSize>1.100000023841858</PackSize>
+   <ProductModifiedDateTime>2015-07-20T15:49:04-07:00</ProductModifiedDateTime>
+   <Drugs>
+      <DrugId>0</DrugId>
+      <AMTCode>string</AMTCode>
+      <ManufacturerCode>string</ManufacturerCode>
+      <AlternateDescription>string</AlternateDescription>
+      <PBSCode>string</PBSCode>
+      <FredDrugCode>string</FredDrugCode>
+      <DrugSchedule>string</DrugSchedule>
+      <AppCatItemId>string</AppCatItemId>
+      <ActiveIngredient>string</ActiveIngredient>
+      <GenericIngredient>string</GenericIngredient>
+      <Format>string</Format>
+      <FormatShortCode>string</FormatShortCode>
+      <Strength>string</Strength>
+      <DrugModifiedDateTime>2015-07-20T15:49:04-07:00</DrugModifiedDateTime>
+   </Drugs>
+   <ICategory>
+      <Level>0</Level>
+      <ID>0</ID>
+      <Name>string</Name>
+      <NextLevel>
+         <AnonymousModel/>
+      </NextLevel>
+   </ICategory>
+   <SOHQty>1.100000023841858</SOHQty>
+   <SOHModifiedDateTime>2015-07-20T15:49:04-07:00</SOHModifiedDateTime>
+   <Barcodes>
+      <Active>string</Active>
+      <ModifiedDateTime>2015-07-20T15:49:04-07:00</ModifiedDateTime>
+      <StoreNumber>string</StoreNumber>
+      <ItemId>string</ItemId>
+      <Barcode>string</Barcode>
+      <BarcodeSetupId>string</BarcodeSetupId>
+   </Barcodes>
+   <Length>1.100000023841858</Length>
+   <Height>1.100000023841858</Height>
+   <Width>1.100000023841858</Width>
+   <Weight>1.100000023841858</Weight>
+   <PlanogramCode>string</PlanogramCode>
+</Product>]]></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent>"string"</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent>&lt;string>string&lt;/string></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent>{
+  "Error" : {
+    "MessageCode" : "Error",
+    "MessageType" : "Error",
+    "Message" : "string",
+    "ErrorDetails" : { }
+  },
+  "CorrelationId" : "00000000-0000-0000-0000-000000000000",
+  "ResponseDateTime" : "2015-07-20T15:49:04-07:00",
+  "ApiVersion" : "string"
+}</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent><![CDATA[<ApiErrorResponse>
+   <ApiError>
+      <MessageCode>Error</MessageCode>
+      <MessageType>Error</MessageType>
+      <Message>string</Message>
+      <ErrorDetails/>
+   </ApiError>
+   <CorrelationId>00000000-0000-0000-0000-000000000000</CorrelationId>
+   <ResponseDateTime>2015-07-20T15:49:04-07:00</ResponseDateTime>
+   <ApiVersion>string</ApiVersion>
+</ApiErrorResponse>]]></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>500</con:status><con:params/><con:sampleContent>{
+  "Error" : {
+    "MessageCode" : "Error",
+    "MessageType" : "Error",
+    "Message" : "string",
+    "ErrorDetails" : { }
+  },
+  "CorrelationId" : "00000000-0000-0000-0000-000000000000",
+  "ResponseDateTime" : "2015-07-20T15:49:04-07:00",
+  "ApiVersion" : "string"
+}</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>500</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>500</con:status><con:params/><con:sampleContent><![CDATA[<ApiErrorResponse>
+   <ApiError>
+      <MessageCode>Error</MessageCode>
+      <MessageType>Error</MessageType>
+      <Message>string</Message>
+      <ErrorDetails/>
+   </ApiError>
+   <CorrelationId>00000000-0000-0000-0000-000000000000</CorrelationId>
+   <ResponseDateTime>2015-07-20T15:49:04-07:00</ResponseDateTime>
+   <ApiVersion>string</ApiVersion>
+</ApiErrorResponse>]]></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>500</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>503</con:status><con:params/><con:sampleContent>{
+  "Error" : {
+    "MessageCode" : "Error",
+    "MessageType" : "Error",
+    "Message" : "string",
+    "ErrorDetails" : { }
+  },
+  "CorrelationId" : "00000000-0000-0000-0000-000000000000",
+  "ResponseDateTime" : "2015-07-20T15:49:04-07:00",
+  "ApiVersion" : "string"
+}</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>503</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>503</con:status><con:params/><con:sampleContent><![CDATA[<ApiErrorResponse>
+   <ApiError>
+      <MessageCode>Error</MessageCode>
+      <MessageType>Error</MessageType>
+      <Message>string</Message>
+      <ErrorDetails/>
+   </ApiError>
+   <CorrelationId>00000000-0000-0000-0000-000000000000</CorrelationId>
+   <ResponseDateTime>2015-07-20T15:49:04-07:00</ResponseDateTime>
+   <ApiVersion>string</ApiVersion>
+</ApiErrorResponse>]]></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>503</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:request name="Request 1" id="2e4e9a1a-f9e0-48bb-aab7-074afbf2196c" mediaType="application/json"><con:settings/><con:endpoint>https://nxt-tpi-qa-bi-v-api.azurewebsites.net</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:environmentSpec><con:entry environmentId="ed751753-4140-47e0-ac6a-bf3aa60cc87d"><con:authProfile>No Authorization</con:authProfile></con:entry></con:environmentSpec></con:request></con:method></con:resource>

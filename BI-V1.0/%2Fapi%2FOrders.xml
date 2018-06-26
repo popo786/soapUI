@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/api/Orders" path="/api/Orders" id="eecb03e4-1b08-4ff6-b583-705e15f87193" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="eecb03e4-1b08-4ff6-b583-705e15f87193fileName">%2Fapi%2FOrders</con:setting></con:settings><con:parameters/><con:method name="PurchaseOrders" id="aacd9af4-023c-404e-a3f3-88dfae7cd5c9" method="GET"><con:description>
+Get the purchase order summary for given date range.</con:description><con:settings/><con:parameters><con:parameter><con:name>FredAccessKey</con:name><con:style>HEADER</con:style><con:description>Access key related to the store</con:description></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent>{StoreNumber=AB1001, OrderId=5637764475, OrderLineId=5642060059, OrderNoCode=ABC-002653, InvoiceNoCode=45678, OrderDate=2018-01-22T05:06:42+00:00, InvoiceDate=2018-01-23, ReceiptDate=2018-01-23, SupplierId=API00001, SupplierName=Api Pty Ltd, ItemId=100273, Description=APO Amoxycillin Cap 250mg Blst 20, Barcode=9338475088874, CategoryId=5637145849, CategoryName=Ethical Generic, DepartmentId=5637145800, DepartmentName=Ethical, PDECode=901660, PackSize=20.0, OuterSize=1.0, MinOrderQty=1.0, OrderStatusId=3, OrderStatus=Invoiced, OrderTypeId=3, OrderType=Purchase order, GSTFlag=1, OrderQty=3.0, OrderPrice=1.38, OrderNetAmt=4.14, SOHQty=15.0, RetailPrice=7.49, CostPrice=1.38, InvoiceQty=3.0, InvoicePrice=1.38, InvoiceNetAmt=4.14, InvoiceGSTAmt=0.42, InvoiceGrossAmt=4.56}</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent><![CDATA[<PurchaseOrder>
+   <StoreNumber>string</StoreNumber>
+   <OrderId>0</OrderId>
+   <OrderLineId>0</OrderLineId>
+   <OrderNoCode>string</OrderNoCode>
+   <InvoiceNoCode>string</InvoiceNoCode>
+   <OrderDate>2015-07-20T15:49:04-07:00</OrderDate>
+   <InvoiceDate>2015-07-20T15:49:04-07:00</InvoiceDate>
+   <ReceiptDate>2015-07-20T15:49:04-07:00</ReceiptDate>
+   <SupplierId>string</SupplierId>
+   <SupplierName>string</SupplierName>
+   <ItemId>string</ItemId>
+   <Description>string</Description>
+   <Barcode>string</Barcode>
+   <CategoryId>0</CategoryId>
+   <CategoryName>string</CategoryName>
+   <DepartmentId>0</DepartmentId>
+   <DepartmentName>string</DepartmentName>
+   <PDECode>string</PDECode>
+   <PackSize>1.100000023841858</PackSize>
+   <OuterSize>1.100000023841858</OuterSize>
+   <MinOrderQty>1.100000023841858</MinOrderQty>
+   <OrderStatusId>0</OrderStatusId>
+   <OrderStatus>string</OrderStatus>
+   <OrderTypeId>0</OrderTypeId>
+   <OrderType>string</OrderType>
+   <GSTFlag>0</GSTFlag>
+   <OrderQty>1.100000023841858</OrderQty>
+   <OrderPrice>1.100000023841858</OrderPrice>
+   <OrderNetAmt>1.100000023841858</OrderNetAmt>
+   <SOHQty>1.100000023841858</SOHQty>
+   <RetailPrice>1.100000023841858</RetailPrice>
+   <CostPrice>1.100000023841858</CostPrice>
+   <InvoiceQty>1.100000023841858</InvoiceQty>
+   <InvoicePrice>1.100000023841858</InvoicePrice>
+   <InvoiceNetAmt>1.100000023841858</InvoiceNetAmt>
+   <InvoiceGSTAmt>1.100000023841858</InvoiceGSTAmt>
+   <InvoiceGrossAmt>1.100000023841858</InvoiceGrossAmt>
+</PurchaseOrder>]]></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:request name="Request 1" id="0c4a7bb4-ff47-4129-ada5-bdca0e5bcb20" mediaType="application/json"><con:settings/><con:endpoint>https://nxt-tpi-qa-bi-api.azurewebsites.net</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource>

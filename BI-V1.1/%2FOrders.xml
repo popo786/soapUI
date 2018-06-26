@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/Orders" path="/Orders" id="4cc30f03-2cde-4ffa-9550-18a545dd8ab7" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="4cc30f03-2cde-4ffa-9550-18a545dd8ab7fileName">%2FOrders</con:setting></con:settings><con:parameters/><con:method name="Orders" id="72dea62e-1b26-4a3d-aa6a-6f8ea9308d8c" method="GET"><con:description>Get the Purchase orders details for the given date range
+</con:description><con:settings/><con:parameters><con:parameter required="true"><con:name>fromDate</con:name><con:style>QUERY</con:style><con:description/></con:parameter><con:parameter required="true"><con:name>toDate</con:name><con:style>QUERY</con:style><con:description/></con:parameter><con:parameter required="true"><con:name>FredAccessKey</con:name><con:style>HEADER</con:style><con:description>Access key related to the store</con:description></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent>{StoreNumber=AB1001, OrderId=5637764475, OrderLineId=5642060059, OrderNoCode=ABC-002653, InvoiceNoCode=45678, OrderDate=2018-01-22T05:06:42+00:00, InvoiceDate=2018-01-23, ReceiptDate=2018-01-23, SupplierId=API00001, SupplierName=Api Pty Ltd, ItemId=100273, Description=APO Amoxycillin Cap 250mg Blst 20, Barcode=9338475088874, CategoryId=5637145849, CategoryName=Ethical Generic, DepartmentId=5637145800, DepartmentName=Ethical, PDECode=901660, PackSize=20.0, OuterSize=1.0, MinOrderQty=1.0, OrderStatusId=3, OrderStatus=Invoiced, OrderTypeId=3, OrderType=Purchase order, GSTFlag=1, OrderQty=3.0, OrderPrice=1.38, OrderNetAmt=4.14, SOHQty=15.0, RetailPrice=7.49, CostPrice=1.38, InvoiceQty=3.0, InvoicePrice=1.38, InvoiceNetAmt=4.14, InvoiceGSTAmt=0.42, InvoiceGrossAmt=4.56}</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent><![CDATA[<PurchaseOrder>
+   <StoreNumber>string</StoreNumber>
+   <OrderId>0</OrderId>
+   <OrderLineId>0</OrderLineId>
+   <OrderNoCode>string</OrderNoCode>
+   <InvoiceNoCode>string</InvoiceNoCode>
+   <OrderDate>2015-07-20T15:49:04-07:00</OrderDate>
+   <InvoiceDate>2015-07-20T15:49:04-07:00</InvoiceDate>
+   <ReceiptDate>2015-07-20T15:49:04-07:00</ReceiptDate>
+   <SupplierId>string</SupplierId>
+   <SupplierName>string</SupplierName>
+   <ItemId>string</ItemId>
+   <Description>string</Description>
+   <Barcode>string</Barcode>
+   <CategoryId>0</CategoryId>
+   <CategoryName>string</CategoryName>
+   <DepartmentId>0</DepartmentId>
+   <DepartmentName>string</DepartmentName>
+   <PDECode>string</PDECode>
+   <PackSize>1.100000023841858</PackSize>
+   <OuterSize>1.100000023841858</OuterSize>
+   <MinOrderQty>1.100000023841858</MinOrderQty>
+   <OrderStatusId>0</OrderStatusId>
+   <OrderStatus>string</OrderStatus>
+   <OrderTypeId>0</OrderTypeId>
+   <OrderType>string</OrderType>
+   <GSTFlag>0</GSTFlag>
+   <OrderQty>1.100000023841858</OrderQty>
+   <OrderPrice>1.100000023841858</OrderPrice>
+   <OrderNetAmt>1.100000023841858</OrderNetAmt>
+   <SOHQty>1.100000023841858</SOHQty>
+   <RetailPrice>1.100000023841858</RetailPrice>
+   <CostPrice>1.100000023841858</CostPrice>
+   <InvoiceQty>1.100000023841858</InvoiceQty>
+   <InvoicePrice>1.100000023841858</InvoicePrice>
+   <InvoiceNetAmt>1.100000023841858</InvoiceNetAmt>
+   <InvoiceGSTAmt>1.100000023841858</InvoiceGSTAmt>
+   <InvoiceGrossAmt>1.100000023841858</InvoiceGrossAmt>
+</PurchaseOrder>]]></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent>"string"</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent>&lt;string>string&lt;/string></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent>{
+  "Error" : {
+    "MessageCode" : "Error",
+    "MessageType" : "Error",
+    "Message" : "string",
+    "ErrorDetails" : { }
+  },
+  "CorrelationId" : "00000000-0000-0000-0000-000000000000",
+  "ResponseDateTime" : "2015-07-20T15:49:04-07:00",
+  "ApiVersion" : "string"
+}</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent><![CDATA[<ApiErrorResponse>
+   <ApiError>
+      <MessageCode>Error</MessageCode>
+      <MessageType>Error</MessageType>
+      <Message>string</Message>
+      <ErrorDetails/>
+   </ApiError>
+   <CorrelationId>00000000-0000-0000-0000-000000000000</CorrelationId>
+   <ResponseDateTime>2015-07-20T15:49:04-07:00</ResponseDateTime>
+   <ApiVersion>string</ApiVersion>
+</ApiErrorResponse>]]></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:request name="Request 1" id="ae9c9417-1d54-4f19-9f9c-d740e5881617" mediaType="application/json"><con:settings/><con:endpoint>https://nxt-tpi-qa-bi-v-api.azurewebsites.net</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:environmentSpec><con:entry environmentId="ed751753-4140-47e0-ac6a-bf3aa60cc87d"><con:authProfile>No Authorization</con:authProfile></con:entry></con:environmentSpec></con:request></con:method></con:resource>

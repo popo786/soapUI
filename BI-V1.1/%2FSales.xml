@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/Sales" path="/Sales" id="ec2596d7-0d41-41bf-938c-877b4392a5a1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="ec2596d7-0d41-41bf-938c-877b4392a5a1fileName">%2FSales</con:setting></con:settings><con:parameters/><con:method name="Sales" id="ca4fef1c-8a11-48a8-ab13-ba3418f4214d" method="GET"><con:description>Get the Sales transactions details for given date range
+</con:description><con:settings/><con:parameters><con:parameter required="true"><con:name>fromDate</con:name><con:style>QUERY</con:style><con:description/></con:parameter><con:parameter required="true"><con:name>toDate</con:name><con:style>QUERY</con:style><con:description/></con:parameter><con:parameter required="true"><con:name>FredAccessKey</con:name><con:style>HEADER</con:style><con:description>Access key related to the store</con:description></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent>{StoreNumber=AB1001, SaleDateTime=2017-12-08T13:48:17+00:00, SaleCode=1019-000004-411, SaleLineCode=2.0, ItemId=700716, ItemDescription=APO Amoxycillin Cap 250mg Blst 20, Barcode=9338475088874, OperatorId=100001, SaleTypeCode=Sale, AccountNumber=ABC-01709999, IsAbandoned=0, RecRetailPrice=6.99, GrossMarginAmt=16.62, COGSAmt=1.59, GrossSalesAmt=18.21, GSTAmt=0.0, SalesExGSTAmt=18.21, DiscountExGSTAmt=0.0, SaleQty=1.0, NetSalesAmt=18.21, GovernmentRecoveryExGSTAmt=0.0, EntryStatus=Posted, ShiftId=104, IsScript=1, ScriptNumber=100823}</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent><![CDATA[<Sales>
+   <StoreNumber>string</StoreNumber>
+   <SaleDateTime>2015-07-20T15:49:04-07:00</SaleDateTime>
+   <SaleCode>string</SaleCode>
+   <SaleLineCode>1.100000023841858</SaleLineCode>
+   <ItemId>string</ItemId>
+   <ItemDescription>string</ItemDescription>
+   <Barcode>string</Barcode>
+   <OperatorId>string</OperatorId>
+   <SaleTypeCode>string</SaleTypeCode>
+   <AccountNumber>string</AccountNumber>
+   <IsAbandoned>0</IsAbandoned>
+   <RecRetailPrice>1.100000023841858</RecRetailPrice>
+   <GrossMarginAmt>1.100000023841858</GrossMarginAmt>
+   <COGSAmt>1.100000023841858</COGSAmt>
+   <GrossSalesAmt>1.100000023841858</GrossSalesAmt>
+   <GSTAmt>1.100000023841858</GSTAmt>
+   <SalesExGSTAmt>1.100000023841858</SalesExGSTAmt>
+   <DiscountExGSTAmt>1.100000023841858</DiscountExGSTAmt>
+   <SaleQty>1.100000023841858</SaleQty>
+   <NetSalesAmt>1.100000023841858</NetSalesAmt>
+   <GovernmentRecoveryExGSTAmt>1.100000023841858</GovernmentRecoveryExGSTAmt>
+   <EntryStatus>string</EntryStatus>
+   <ShiftId>0</ShiftId>
+   <IsScript>0</IsScript>
+   <ScriptNumber>0</ScriptNumber>
+</Sales>]]></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent>"string"</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent>&lt;string>string&lt;/string></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent>{
+  "Error" : {
+    "MessageCode" : "Error",
+    "MessageType" : "Error",
+    "Message" : "string",
+    "ErrorDetails" : { }
+  },
+  "CorrelationId" : "00000000-0000-0000-0000-000000000000",
+  "ResponseDateTime" : "2015-07-20T15:49:04-07:00",
+  "ApiVersion" : "string"
+}</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent><![CDATA[<ApiErrorResponse>
+   <ApiError>
+      <MessageCode>Error</MessageCode>
+      <MessageType>Error</MessageType>
+      <Message>string</Message>
+      <ErrorDetails/>
+   </ApiError>
+   <CorrelationId>00000000-0000-0000-0000-000000000000</CorrelationId>
+   <ResponseDateTime>2015-07-20T15:49:04-07:00</ResponseDateTime>
+   <ApiVersion>string</ApiVersion>
+</ApiErrorResponse>]]></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:request name="Request 1" id="ee43ae0c-29a9-41f5-9af5-73f48510e7b0" mediaType="application/json"><con:settings/><con:endpoint>https://nxt-tpi-qa-bi-v-api.azurewebsites.net</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:environmentSpec><con:entry environmentId="ed751753-4140-47e0-ac6a-bf3aa60cc87d"><con:authProfile>No Authorization</con:authProfile></con:entry></con:environmentSpec></con:request></con:method></con:resource>

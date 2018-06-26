@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/CategoryHierarchy/Type/{type}" path="/CategoryHierarchy/Type/{type}" id="26d21785-af76-4848-81ec-95e7666f13e5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="26d21785-af76-4848-81ec-95e7666f13e5fileName">%2FCategoryHierarchy%2FType%2F%7Btype%7D</con:setting></con:settings><con:parameters><con:parameter required="true"><con:name>type</con:name><con:style>TEMPLATE</con:style><con:description/></con:parameter></con:parameters><con:method name="CategoryHierarchyByType" id="824f7b86-8375-44f3-bd76-2829fe4204fb" method="GET"><con:description>Returns categories in tree structure for given type with list of all products in that hierarchy
+</con:description><con:settings/><con:parameters><con:parameter required="true"><con:name>FredAccessKey</con:name><con:style>HEADER</con:style><con:description>Access key related to the store</con:description></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent>{StoreNumber=AB1001, ID=5678910, TypeId=4, TypeName=Retail Hierarchy, Name=Retail Hierarchy, Code=, Active=1, Parent=0, PathText=Retail Hierarchy, PathId=5678910, Level=1, CreatedDateTime=2017-04-18T20:35:00+00:00, ModifiedDateTime=2018-03-22T00:52:00+00:00, NextLevel=[{StoreNumber=AB1001, ID=5678911, TypeId=4, TypeName=Retail Hierarchy, Name=Drugs, Code=, Active=1, Parent=5678910, PathText=Retail Hierarchy/Drugs, PathId=5678910/5678911, Level=2, CreatedDateTime=2017-04-18T20:35:05+00:00, ModifiedDateTime=2017-04-18T20:35:06+00:00, NextLevel=[{StoreNumber=AB1001, ID=5678912, TypeId=4, TypeName=Retail Hierarchy, Name=Appcat, Code=, Active=1, Parent=5678911, PathText=Retail Hierarchy/Drugs/Appcat, PathId=5678910/5678911/5678912, Level=3, CreatedDateTime=2017-04-18T20:35:06+00:00, ModifiedDateTime=2017-04-18T20:35:06+00:00, Products=[{ItemId=700050, Brand=DOCETAXEL (ACCORD), ItemDescription=Docetaxel ACC 160mg/8mlVial 1 S100C, SupplierCode=, SupplierName=, ProductId=5637452137, UOM=ea, PackSize=1.0, ProductModifiedDateTime=2017-10-31T00:53:59+00:00}, {ItemId=700100, Brand=TOUJEO SOLOSTAR, ItemDescription=TOUJEO SOLOSTAR PFP 300 iu/mL 1.5mL 5, SupplierCode=SUP001, SupplierName=SUPPLIER OF SHOP, ProductId=5637479609, UOM=ea, PackSize=1.0, ProductModifiedDateTime=2017-11-30T05:34:09+00:00}, {ItemId=700150, Brand=HYOSCINE BUTYLBROMIDE (SXP), ItemDescription=HYOSCINE BUTYLBROMIDE SXP 20MG/ML 5 AMP, SupplierCode=SUP001, SupplierName=SUPPLIER OF SHOP, ProductId=5637479619, UOM=ea, PackSize=5.0, ProductModifiedDateTime=2017-11-30T05:34:25+00:00}]}]}]}</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent><![CDATA[<CategoryHeirarchy>
+   <StoreNumber>string</StoreNumber>
+   <ID>0</ID>
+   <TypeId>0</TypeId>
+   <TypeName>string</TypeName>
+   <Name>string</Name>
+   <Code>string</Code>
+   <Active>0</Active>
+   <Parent>0</Parent>
+   <PathText>string</PathText>
+   <PathId>string</PathId>
+   <Level>0</Level>
+   <CreatedDateTime>2015-07-20T15:49:04-07:00</CreatedDateTime>
+   <ModifiedDateTime>2015-07-20T15:49:04-07:00</ModifiedDateTime>
+   <ICategory>
+      <Level>0</Level>
+      <ID>0</ID>
+      <Name>string</Name>
+      <NextLevel>
+         <AnonymousModel/>
+      </NextLevel>
+   </ICategory>
+   <CoreProduct>
+      <ItemId>string</ItemId>
+      <Brand>string</Brand>
+      <ItemDescription>string</ItemDescription>
+      <SupplierCode>string</SupplierCode>
+      <SupplierName>string</SupplierName>
+      <ProductId>0</ProductId>
+      <UOM>string</UOM>
+      <PackSize>1.100000023841858</PackSize>
+      <ProductModifiedDateTime>2015-07-20T15:49:04-07:00</ProductModifiedDateTime>
+   </CoreProduct>
+</CategoryHeirarchy>]]></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent>"string"</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent>&lt;string>string&lt;/string></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>400</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent>{
+  "Error" : {
+    "MessageCode" : "Error",
+    "MessageType" : "Error",
+    "Message" : "string",
+    "ErrorDetails" : { }
+  },
+  "CorrelationId" : "00000000-0000-0000-0000-000000000000",
+  "ResponseDateTime" : "2015-07-20T15:49:04-07:00",
+  "ApiVersion" : "string"
+}</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent><![CDATA[<ApiErrorResponse>
+   <ApiError>
+      <MessageCode>Error</MessageCode>
+      <MessageType>Error</MessageType>
+      <Message>string</Message>
+      <ErrorDetails/>
+   </ApiError>
+   <CorrelationId>00000000-0000-0000-0000-000000000000</CorrelationId>
+   <ResponseDateTime>2015-07-20T15:49:04-07:00</ResponseDateTime>
+   <ApiVersion>string</ApiVersion>
+</ApiErrorResponse>]]></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>403</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>404</con:status><con:params/></con:representation><con:request name="Request 1" id="81fe78f9-81b0-44a9-8b3e-06b6b0b0124c" mediaType="application/json"><con:settings/><con:endpoint>https://nxt-tpi-qa-bi-v-api.azurewebsites.net</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/><con:environmentSpec><con:entry environmentId="ed751753-4140-47e0-ac6a-bf3aa60cc87d"><con:authProfile>No Authorization</con:authProfile></con:entry></con:environmentSpec></con:request></con:method></con:resource>

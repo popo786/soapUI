@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/api/Stocks" path="/api/Stocks" id="3fc21b92-bfc2-4d58-b710-f8c87d8149fe" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="3fc21b92-bfc2-4d58-b710-f8c87d8149fefileName">%2Fapi%2FStocks</con:setting></con:settings><con:parameters/><con:method name="Stocks" id="3468ebbd-f2db-4260-96a9-09f745a753a0" method="GET"><con:description>
+Get the Product and available stock at given point of time for the products</con:description><con:settings/><con:parameters><con:parameter><con:name>FredAccessKey</con:name><con:style>HEADER</con:style><con:description>Access key related to the store</con:description></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent>{StoreNumber=AB1001, ItemId=112170, Description=CILAMOX CAP 250MG 20, SupplierId=API00001, SupplierName=Api Pty Ltd, Barcode=9316626601226, ProductId=5637157248, AppCatItemId=APC-153746, CategoryId=5637145849, CategoryName=Ethical Generic, DepartmentId=5637145800, DepartmentName=Ethical, MarkupPercent=0.0, RetailPriceExGST=6.95, RetailPrice=7.49, Cost=1.38, AverageCost=1.690265, SOHQty=30.0}</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent><![CDATA[<StockOnHand>
+   <StoreNumber>string</StoreNumber>
+   <ItemId>string</ItemId>
+   <Description>string</Description>
+   <SupplierId>string</SupplierId>
+   <SupplierName>string</SupplierName>
+   <Barcode>string</Barcode>
+   <ProductId>0</ProductId>
+   <AppCatItemId>string</AppCatItemId>
+   <CategoryId>0</CategoryId>
+   <CategoryName>string</CategoryName>
+   <DepartmentId>0</DepartmentId>
+   <DepartmentName>string</DepartmentName>
+   <MarkupPercent>1.100000023841858</MarkupPercent>
+   <RetailPriceExGST>1.100000023841858</RetailPriceExGST>
+   <RetailPrice>1.100000023841858</RetailPrice>
+   <Cost>1.100000023841858</Cost>
+   <AverageCost>1.100000023841858</AverageCost>
+   <SOHQty>1.100000023841858</SOHQty>
+</StockOnHand>]]></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:request name="Request 1" id="17ad0a5d-a50b-42ee-9b84-ede63186166a" mediaType="application/json"><con:settings/><con:endpoint>https://nxt-tpi-qa-bi-api.azurewebsites.net</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource>

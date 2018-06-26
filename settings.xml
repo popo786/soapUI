@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="d8a4fdf6-2463-42ef-a88f-fffa9db3e772" created="2.4.0" activeEnvironment="QA" name="Business Intelligence API" resourceRoot="" updated="2.4.0 2018-06-08T12:50:23Z" encryptionMode="Not encrypted" compositeProjectFormat="1.3" defaultScriptLanguage="Groovy" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value="XML"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Test Suite Tags" value=""/>
+  <con:entry key="Select Report Type" value="JUnit-Style report for automation"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Test Suite" value="BI V1.0 TestSuite"/>
+  <con:entry key="Run in-process" value="false"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Test Case Tags" value=""/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Test Case" value="&lt;all>"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\ReadyAPI-2.4.0\bin"/>
+  <con:entry key="Environment" value="Default environment"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value="${WORKSPACE}"/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting><con:setting id="Port">8081</con:setting><con:setting id="Set endpoint for HTTP Tunnel:">https://</con:setting><con:setting id="HTTP tunnel - KeyStore"/><con:setting id="HTTP tunnel - Password"/><con:setting id="HTTP tunnel - KeyPassword"/><con:setting id="HTTP tunnel - TrustStore"/><con:setting id="HTTP tunnel - TrustStore Password"/><con:setting id="Reuse request state">false</con:setting><con:setting id="HTTP tunnel - Set SSL Client Key Store path"/><con:setting id="Content types to monitor">*/html, */xml, */soap+xml, */json, */x-json, */javascript, */x-amf, */http</con:setting><con:setting id="HTTP tunnel - Set SSL Client Key Store Password"/><con:setting id="IncludeOverview">false</con:setting><con:setting id="IncludeResults">false</con:setting><con:setting id="FlowLayout">false</con:setting><con:setting id="ErrorDetails">false</con:setting><con:setting id="IncludeCoverage">true</con:setting><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.ProTestRunnerUIAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value="XML"/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="true"/>
+  <con:entry key="Export All" value="true"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Test Suite Tags" value=""/>
+  <con:entry key="Select Report Type" value="JUnit-Style report for automation"/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Test Suite" value="&lt;all>"/>
+  <con:entry key="Run in-process" value="false"/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Test Case Tags" value=""/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Test Case" value="&lt;all>"/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value="C:\Program Files\SmartBear\ReadyAPI-2.4.0\bin"/>
+  <con:entry key="Environment" value="Default environment"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value="${WORKSPACE}"/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting><con:setting id="d8a4fdf6-2463-42ef-a88f-fffa9db3e772fileName">Business Intelligence API</con:setting></con:settings><con:vcsConfiguration><con:vcsName>Git</con:vcsName><con:repositoryIdentifier>https://github.com/popo786/soapUI.git</con:repositoryIdentifier></con:vcsConfiguration><con:savedRecentRuns>1</con:savedRecentRuns><con:requirements/><con:properties><con:property><con:name>FredInvalidAccessKey</con:name><con:value>7b892f58-a111-4c53-8163-d394e2de5d66</con:value></con:property></con:properties><con:wssContainer/><con:databaseConnectionContainer/><con:jmsConnectionContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:eventHandlers type="RequestFilter.filterRequest" name="RequestFilter.filterRequest"><con:script>// Sample event script to add custom HTTP header to all outgoing REST, SOAP and HTTP(S) calls
+// This code is often used for adding custom authentication to SoapUI Pro tests
+
+// If hardcoding the token, uncomment and change line 5
+// def token = '4567'
+
+// If your token is parameterized in Project level custom property, uncomment line 8
+// def token = request.parent.testCase.testSuite.project.getProperty('auth_token').getValue()
+
+// To modify all outgoing calls, remove comments from lines 11 to 16
+// def headers = request.requestHeaders
+// if (headers.containsKey('auth_token2') == false) {
+//   headers.put('auth_token2', token)
+//   request.requestHeaders = headers
+// }</con:script></con:eventHandlers><con:eventHandlers type="TestRunListener.afterStep" name="TestRunListener.afterStep"><con:script>// Save all test step results into files
+// Change the directory path in line 5 to a location where you want to store details
+// then uncomment lines 5 to 10
+
+// filePath = 'C:\\tempOutputDirectory\\'
+// fos = new FileOutputStream(filePath + testStepResult.testStep.label + '.txt', true)
+// pw = new PrintWriter(fos)
+// testStepResult.writeTo(pw)
+// pw.close()
+// fos.close()</con:script></con:eventHandlers><con:environment id="ed751753-4140-47e0-ac6a-bf3aa60cc87d" name="QA"><con:service type="REST" name="BI V1.1"><con:endpoint authProfile="Inherit From Parent" username="" password="" domain="" incomingWss="" outgoingWss="" wssTimeToLive="" wssType="">https://nxt-tpi-qa-bi-v-api.azurewebsites.net</con:endpoint></con:service><con:service type="REST" name="BI V1.0"><con:endpoint authProfile="Inherit From Parent" username="" password="" domain="" incomingWss="" outgoingWss="" wssTimeToLive="" wssType="">https://nxt-tpi-qa-bi-api.azurewebsites.net</con:endpoint></con:service><con:property><con:name>FredInvalidAccessKey</con:name><con:value>7b892f58-a111-4c53-8163-d394e2de5d66</con:value></con:property><con:databaseConnectionContainer/><con:jmsConnectionContainer/></con:environment><con:authRepository/><con:tags/></con:soapui-project>

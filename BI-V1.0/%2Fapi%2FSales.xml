@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="/api/Sales" path="/api/Sales" id="a31f1f71-b562-4ab5-8928-41e7aff86a1c" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="a31f1f71-b562-4ab5-8928-41e7aff86a1cfileName">%2Fapi%2FSales</con:setting></con:settings><con:parameters/><con:method name="Sales" id="afb62f2c-8871-4f47-9712-a0f9f94a0c2f" method="GET"><con:description>
+Get the sales transaction details for given date range</con:description><con:settings/><con:parameters><con:parameter><con:name>FredAccessKey</con:name><con:style>HEADER</con:style><con:description>Access key related to the store</con:description></con:parameter></con:parameters><con:representation type="RESPONSE"><con:mediaType>application/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent>{StoreNumber=AB1001, SaleDateTime=2017-12-08T13:48:17+00:00, SaleCode=1019-000004-411, SaleLineCode=2.0, ItemId=700716, ItemDescription=APO Amoxycillin Cap 250mg Blst 20, Barcode=9338475088874, OperatorId=100001, SaleTypeCode=Sale, AccountNumber=ABC-01709999, IsAbandoned=0, RecRetailPrice=6.99, GrossMarginAmt=16.62, COGSAmt=1.59, GrossSalesAmt=18.21, GSTAmt=0.0, SalesExGSTAmt=18.21, DiscountExGSTAmt=0.0, SaleQty=1.0, NetSalesAmt=18.21, GovernmentRecoveryExGSTAmt=0.0, ShiftId=0, IsScript=1, ScriptNumber=100823}</con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/json</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent><![CDATA[<Sales>
+   <StoreNumber>string</StoreNumber>
+   <SaleDateTime>2015-07-20T15:49:04-07:00</SaleDateTime>
+   <SaleCode>string</SaleCode>
+   <SaleLineCode>1.100000023841858</SaleLineCode>
+   <ItemId>string</ItemId>
+   <ItemDescription>string</ItemDescription>
+   <Barcode>string</Barcode>
+   <OperatorId>string</OperatorId>
+   <SaleTypeCode>string</SaleTypeCode>
+   <AccountNumber>string</AccountNumber>
+   <IsAbandoned>0</IsAbandoned>
+   <RecRetailPrice>1.100000023841858</RecRetailPrice>
+   <GrossMarginAmt>1.100000023841858</GrossMarginAmt>
+   <COGSAmt>1.100000023841858</COGSAmt>
+   <GrossSalesAmt>1.100000023841858</GrossSalesAmt>
+   <GSTAmt>1.100000023841858</GSTAmt>
+   <SalesExGSTAmt>1.100000023841858</SalesExGSTAmt>
+   <DiscountExGSTAmt>1.100000023841858</DiscountExGSTAmt>
+   <SaleQty>1.100000023841858</SaleQty>
+   <NetSalesAmt>1.100000023841858</NetSalesAmt>
+   <GovernmentRecoveryExGSTAmt>1.100000023841858</GovernmentRecoveryExGSTAmt>
+   <EntryStatus>string</EntryStatus>
+   <ShiftId>0</ShiftId>
+   <IsScript>0</IsScript>
+   <ScriptNumber>0</ScriptNumber>
+</Sales>]]></con:sampleContent></con:representation><con:representation type="RESPONSE"><con:mediaType>text/xml</con:mediaType><con:status>200</con:status><con:params/><con:sampleContent xsi:nil="true"/></con:representation><con:request name="Request 1" id="788487d9-9d50-44e9-a579-c5a5a063eb44" mediaType="application/json"><con:settings/><con:endpoint>https://nxt-tpi-qa-bi-api.azurewebsites.net</con:endpoint><con:request/><con:credentials><con:selectedAuthProfile>No Authorization</con:selectedAuthProfile><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:parameters/></con:request></con:method></con:resource>
